@@ -77,8 +77,10 @@
   <ItemGroup>
     <Compile Include="Assets\Autocontrol.cs" />
     <Compile Include="Assets\fuelmeter.cs" />
+    <Compile Include="Assets\lapsteller.cs" />
     <Compile Include="Assets\pitstopsteller.cs" />
     <Compile Include="Assets\speedometer.cs" />
+    <Compile Include="Assets\winscript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
