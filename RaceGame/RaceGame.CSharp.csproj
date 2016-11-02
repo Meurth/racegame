@@ -73,11 +73,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Autocontrol.cs" />
+    <Compile Include="Assets\AutocontrolLambo.cs" />
     <Compile Include="Assets\fuelmeter.cs" />
+    <Compile Include="Assets\fuelmeterLambo.cs" />
     <Compile Include="Assets\lapsteller.cs" />
+    <Compile Include="Assets\lapstellerLambo.cs" />
+    <Compile Include="Assets\menu\Buttonmanager.cs" />
+    <Compile Include="Assets\namesaverscript.cs" />
+    <Compile Include="Assets\opennainvoer.cs" />
     <Compile Include="Assets\pitstopsteller.cs" />
+    <Compile Include="Assets\pitstopstellerLambo.cs" />
+    <Compile Include="Assets\playerdisplay.cs" />
+    <Compile Include="Assets\pressspacescript.cs" />
     <Compile Include="Assets\speedometer.cs" />
     <Compile Include="Assets\winscript.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\fonts\OFL.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
