@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class winscript : MonoBehaviour {
 
@@ -10,6 +11,7 @@ public class winscript : MonoBehaviour {
 
     public bool autowins = false;
     public bool lambowins = false;
+    string newGameLevel = "level1";
 
     // Use this for initialization
     void Start () {
@@ -22,16 +24,34 @@ public class winscript : MonoBehaviour {
         if ((auto.laps == 3) && (lambowins == false))
         {
             Text wintext = GetComponent<Text>();
-            wintext.text = ("Player: " + auto.playernumber + " wins!");
+            wintext.text = ("Player 1 wins!");
             autowins = true;
         }
 
         if ((lambo.laps == 3) && (autowins == false))
         {
             Text wintext = GetComponent<Text>();
-            wintext.text = ("Player: " + lambo.playernumber + " wins!");
+            wintext.text = ("Player 2 wins!");
             lambowins = true;
         }
 
+        if (lambowins || autowins)
+        {
+            auto.speedForce = 0f;
+            lambo.speedForce = 0f;
+            backtomenu();
+        }
+
     }
+
+    void backtomenu()
+    {
+
+        if (Input.GetKeyDown("space"))
+        {
+            SceneManager.LoadScene(newGameLevel);
+        }
+    }
+
+
 }
