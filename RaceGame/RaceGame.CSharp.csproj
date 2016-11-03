@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Assets\Autocontrol.cs" />
     <Compile Include="Assets\AutocontrolLambo.cs" />
+    <Compile Include="Assets\countdowntimerscript.cs" />
     <Compile Include="Assets\fuelmeter.cs" />
     <Compile Include="Assets\fuelmeterLambo.cs" />
     <Compile Include="Assets\lapsteller.cs" />
