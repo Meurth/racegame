@@ -3,14 +3,19 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class countdowntimerscript : MonoBehaviour {
-    public float timercount = 0f;
 
+    public bool startcountdown = false;
+    public bool startcountdown2 = false;
     // Use this for initialization
     void Start () {
 
 
-        StartCoroutine(timertje());
-        
+        if (startcountdown)
+        {
+            StartCoroutine(timertje());
+            AudioSource muziek = GetComponent<AudioSource>();
+            muziek.Play();
+        }
 
 
     }

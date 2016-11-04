@@ -8,6 +8,8 @@ public class winscript : MonoBehaviour {
 
     public Autocontrol auto;
     public AutocontrolLambo lambo;
+    public namesaverscript names;
+
 
     public bool autowins = false;
     public bool lambowins = false;
@@ -24,14 +26,14 @@ public class winscript : MonoBehaviour {
         if ((auto.laps == 3) && (lambowins == false))
         {
             Text wintext = GetComponent<Text>();
-            wintext.text = ("Player 1 wins!");
+            wintext.text = (names.player1name + " wins!");
             autowins = true;
         }
 
         if ((lambo.laps == 3) && (autowins == false))
         {
             Text wintext = GetComponent<Text>();
-            wintext.text = ("Player 2 wins!");
+            wintext.text = (names.player2name + " wins!");
             lambowins = true;
         }
 
